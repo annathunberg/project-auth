@@ -5,9 +5,100 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  min-height: 100vh;
+  background: #07004d;
+  box-sizing: border-box;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+h1 {
+  color: #faf8f9;
+  text-align: center;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 50px auto;
+  background-color: #d5dcf9;
+  border-radius: 10px;
+  width: 300px;
+  height: 400px;
+}
+
+.btn-container {
+  margin-top: 10px;
+}
+
+.submit-btn,
+.sign-btn,
+.logout-btn {
+  margin: 20px;
+  cursor: pointer;
+  font-weight: 700;
+  display: inline-block;
+  background: #e0ff4f;
+  padding: 10px 20px;
+  border-radius: 50px;
+  color: #07004d;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: 2px solid #07004d;
+}
+
+.action-title {
+  font-weight: 700;
+  font-size: 24px;
+  margin: 10px 0;
+  text-align: center;
+  color: #07004d;
+}
+
+.logout-btn-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-container {
+  width: 80%;
+  margin: 0;
+  /* border: 1px solid yellow; */
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  /* padding: 15px 10px; */
+  /* border: 1px solid green; */
+}
+
+form .submit-btn {
+  align-self: center;
+}
+
+label {
+  font-family: "Inter UI", "SF Pro Display", -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  text-align: center;
+  color: #07004d;
+  font-weight: 500;
+}
+
+input {
+  width: 60%;
+  margin: auto;
+  height: 25px;
+  text-align: center;
+  border-radius: 2px;
+  border: 1px solid #07004d;
 }
