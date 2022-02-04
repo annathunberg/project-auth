@@ -32,7 +32,7 @@ const User = mongoose.model("User", UserSchema);
 const port = process.env.PORT || 8080;
 const app = express();
 
-const authenticatedUser = (req, res, next) => {
+const authenticatedUser = async (req, res, next) => {
   const accessToken = req.header("Authorization");
 
   try {
